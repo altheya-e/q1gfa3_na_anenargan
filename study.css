@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'Super Dream';
+    src: url(Super-Dream.ttf); 
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* parent container of the entire page */
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 205vh;
+}
+
+/* header */
+.header{
+    height: 10vh;
+    width: 100vw;
+    display: block;
+    position: fixed;
+    z-index: 99;
+    flex: 1;
+    background: -webkit-linear-gradient(left, #ff7c5b, #F4A261, #E9C46A, #b0dfa0, #76abc0);
+    border: 2px solid #20160d;
+}
+
+/* Navigation bar w/ logo */
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Left side of nav-bar */
+.left-menu{
+    display: inline-flex;
+    justify-content: left;
+    margin-top: 4vh;
+    margin-left: 3vw;
+}
+
+.left-menu a{
+    display: inline;
+    margin-right: 3vw;
+    padding: 1vw;
+    text-decoration: none;
+    color: #20160d;
+    font-size: 1em;
+    font-family: Helvetica;
+}
+
+/* Logo */
+.header img{
+    display: inline-flex;
+    height: 14vh;
+    border-radius: 360px;
+    border: 1px solid #20160d;
+    margin-top: 1vh;
+    justify-content: center;
+}   
+
+/* Right side of nav-bar */
+.right-menu{
+    display: inline-flex;
+    float: right;
+    margin-top: 4vh;
+    margin-right: 3vw;
+    justify-content: right;
+}
+
+.right-menu a{
+    display: inline;
+    margin-right: 3vw;
+    padding: 1vw;
+    text-decoration: none;
+    color: #20160d;
+    font-size: 1em;
+    font-family: Helvetica;
+}
+
+/* Footer */
+.footer{
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    background: -webkit-linear-gradient(left, #ff7c5b, #F4A261, #E9C46A, #b0dfa0, #76abc0);
+    border: 2px solid #20160d;
+    height: 10vh;
+    flex: 1;
+    width: 100vw;
+    bottom: 0px;
+}
+
+.footer p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 4vh;
+    margin-left: 3vw;
+    justify-content: right;
+}
+
+.icons{
+    justify-content: right;
+    margin: 0px;
+    margin-right: 3vw;
+    margin-top: 1vw;
+}
+
+.icons img{
+    height: 6vh;
+    margin-right: .5vw;
+}

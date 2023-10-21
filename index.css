@@ -1,0 +1,231 @@
+@font-face {
+    font-family: 'Super Dream';
+    src: url(Super-Dream.ttf); 
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* parent container of the entire page */
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 205vh;
+}
+
+/* header */
+.header{
+    height: 10vh;
+    width: 100vw;
+    display: block;
+    position: fixed;
+    z-index: 99;
+    flex: 1;
+    background: -webkit-linear-gradient(left, #ff7c5b, #F4A261, #E9C46A, #b0dfa0, #76abc0);
+    border: 2px solid #20160d;
+}
+
+/* Navigation bar w/ logo */
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Left side of nav-bar */
+.left-menu{
+    display: inline-flex;
+    justify-content: left;
+    margin-top: 4vh;
+    margin-left: 3vw;
+}
+
+.left-menu a{
+    display: inline;
+    margin-right: 3vw;
+    padding: 1vw;
+    text-decoration: none;
+    color: #20160d;
+    font-size: 1em;
+    font-family: Helvetica;
+}
+
+/* Logo */
+.header img{
+    display: inline-flex;
+    height: 14vh;
+    border-radius: 360px;
+    border: 1px solid #20160d;
+    margin-top: 1vh;
+    justify-content: center;
+}   
+
+/* Right side of nav-bar */
+.right-menu{
+    display: inline-flex;
+    float: right;
+    margin-top: 4vh;
+    margin-right: 3vw;
+    justify-content: right;
+}
+
+.right-menu a{
+    display: inline;
+    margin-right: 3vw;
+    padding: 1vw;
+    text-decoration: none;
+    color: #20160d;
+    font-size: 1em;
+    font-family: Helvetica;
+}
+
+/* Banner below the nav-bar */
+.banner{
+    border: 1px solid #20160d;
+    position: relative; 
+    flex: 2;
+    background-image: url(images/banner-img.png);
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Title of website */
+.banner h1{
+    text-align: center;
+    margin-top: 20vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-bottom: 10vh;
+    font-size: 4.5em;
+    letter-spacing: 0.3vw;
+    font-family: 'Super Dream';
+    text-transform: uppercase;
+    color: #ffcd50;
+    text-shadow: 3px 3px #ff7c5b;
+}
+
+/* Body of website; where most text is located */
+.content{
+    border: 1px solid #20160d;
+    background-color: #ffe7d2;
+    flex: 10;
+}
+
+/* introduction */
+.introduction h1{
+    color: #ffcd50;
+    text-shadow: 3px 3px #ff7c5b;
+    font-size: 3.3em;
+    font-family: 'Super Dream';
+}
+
+.introduction p{
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-bottom: 3vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
+
+.introduction{
+    border-bottom: solid 1px #20160d;
+}
+
+.content h1{
+    font-size: 3.3em;
+    margin-top: 4vh;
+    text-align: center;
+    font-family: 'a Abstract Groovy';
+    color: #ffcd50;
+    text-shadow: 3px 3px #ff7c5b;
+    letter-spacing: 0.2vw;
+}
+
+.content p{
+    margin-top: 2vh;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    color: #20160d;
+}
+
+/* Direct links (buttons) */
+.content-links{
+    margin-left: 19vw;
+    margin-right: 19vw;
+    margin-top: 5vh;
+}
+
+.content-links a{
+    text-decoration: none;
+    font-family: helvetica;
+    color: #20160d;
+    border: solid 1px #20160d;
+    margin-left: 5vw;
+    background-color: #E9C46A;
+    text-transform: uppercase;  
+    padding: 0.9vw;
+    border-radius: 1vh;   
+}
+
+.decoration{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.decoration img{
+    display: inline;
+    margin-top: 5vh;
+    float: left;
+}
+
+#bg-img1{
+    height: 60vh;
+}
+
+#bg-img2{
+    height: 50vh;
+    margin-left: -5vw;
+    margin-top: 10vh;
+}
+
+#bg-img3{
+    height: 50vh;
+    bottom: 0vh;
+    margin-left: 25vw;
+    margin-top: 10vh;
+}
+
+/* Footer */
+.footer{
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    background: -webkit-linear-gradient(left, #ff7c5b, #F4A261, #E9C46A, #b0dfa0, #76abc0);
+    border: 2px solid #20160d;
+    height: 10vh;
+    flex: 1;
+    width: 100vw;
+    bottom: 0px;
+}
+
+.footer p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 4vh;
+    margin-left: 3vw;
+    justify-content: right;
+}
+
+.icons{
+    justify-content: right;
+    margin: 0px;
+    margin-right: 3vw;
+    margin-top: 1vw;
+}
+
+.icons img{
+    height: 6vh;
+    margin-right: .5vw;
+}
